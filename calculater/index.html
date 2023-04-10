@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="./calculater.css">
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+#answer {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+</style>
+<style>
+button {
+  font-family: "Audiowide", sans-serif;
+}
+</style>
+        <style>
+        h1{
+          font-family: "Sofia", sans-serif;
+        }
+        </style>
+        
+</head>
+<body>
+    <h1>CALCULATER</h1>
+    <div id="main-div">
+        <div id="answer"></div>
+        <div id="number">
+            <button  class="keypad" onclick="zero()">0</button>
+            <button class="keypad" onclick="one()">1</button>
+            <button   class="keypad" onclick="two()">2</button>
+            <button   class="keypad" onclick="three()">3</button>
+            <button  class="keypad" onclick="four()">4</button>
+            <button  class="keypad" onclick="five()">5</button>
+            <button  class="keypad" onclick="six()">6</button>
+            <button  class="keypad" onclick="seven()">7</button>
+            <button   id="btn-eight" class="keypad" onclick="eight()">8</button>
+            <button   id="btn-nine" class="keypad" onclick="nine()">9</button>
+
+        </div>
+        <div>
+            <button  id="add" class="operater" onclick="Add()">+</button>
+            <button class="operater" onclick="substract()">-</button>
+            <button  class="operater"onclick="divide()">/</button>
+            <button  class="operater"onclick="Multiply()">*</button>
+            <!-- <button onclick="result()">=</button> -->
+        </div>
+    </div>
+</body>
+
+<script src="./calculater.js"></script>
+</html>
